@@ -112,11 +112,10 @@ For more details, see the [architecture documentation](docs/ARCHITECTURE.md).
 ### Allure report overview
 
 ![Allure report overview](docs/screenshots/allure-overview.png)
-
 ### Automated test scenarios
 
-![Allure test scenarios](docs/screenshots/allure-tests.png)
+![Allure test scenarios](https://raw.githubusercontent.com/helenaLGF/api-testing-portfolio-showcase/main/docs/screenshots/allure-tests.png)
 
 ### GitHub Actions CI pipeline
 
-![GitHub Actions workflow](docs/screenshots/github-actions.png)
+![GitHub Actions workflow](https://raw.githubusercontent.com/helenaLGF/api-testing-portfolio-showcase/main/docs/screenshots/github-actions.png)
