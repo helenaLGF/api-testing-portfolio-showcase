@@ -91,3 +91,11 @@ It demonstrates my approach to test design, automation, maintainability and test
 ---
 
 *Independent personal project — QA Automation.*
+
+## Related resources
+
+- **Live portfolio:** https://api-testing-portfolio.pages.dev/
+- **Allure report:** https://api-testing-portfolio.pages.dev/report/
+- **Public showcase repository:** https://github.com/helenaLGF/api-testing-portfolio-showcase
+- **Author's GitHub profile:** https://github.com/helenaLGF
+
