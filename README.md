@@ -113,3 +113,18 @@ See [the architecture documentation](docs/ARCHITECTURE.md) for details.
 
 See the [API testing architecture diagram](docs/architecture.mmd).
 
+
+## Screenshots
+
+### Allure report overview
+
+![Allure report overview](docs/screenshots/allure-overview.png)
+
+### Automated test scenarios
+
+![Allure test scenarios](docs/screenshots/allure-tests.png)
+
+### GitHub Actions CI pipeline
+
+![GitHub Actions workflow](docs/screenshots/github-actions.png)
+
