@@ -1,0 +1,13 @@
+﻿flowchart TD
+    A[JUnit Test] --> B[PostApiClientTest]
+    B --> C[PostApiClient]
+    C --> D[Spring RestClient]
+    D --> E[MockRestServiceServer]
+    E --> F[Simulated HTTP Response]
+    F --> G[Assertions]
+    G --> H[Allure Results]
+    H --> I[Allure HTML Report]
+    I --> J[Cloudflare Pages]
+
+    K[GitHub Actions] --> L[Maven Test Execution]
+    L --> H
