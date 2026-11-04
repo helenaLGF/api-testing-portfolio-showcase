@@ -1,69 +1,93 @@
 ﻿# API Testing Automation Portfolio
 
-**Personal project | QA Automation**
+**Personal project | QA Automation | REST API Testing**
 
-A personal project demonstrating my skills in REST API testing, test automation, and continuous integration.
-
-## Project overview
-
-This portfolio showcases an automated API testing project built with Java and JUnit.
-
-The objective is to demonstrate the complete testing workflow: test design, automated execution, reporting, and CI/CD integration.
-
-## Technology stack
-
-- Java 25
-- Maven
-- JUnit 6
-- REST API testing
-- Allure Reports
-- GitHub Actions
-- Cloudflare Pages
-
-## Testing approach
-
-The project focuses on:
-
-- API endpoint validation
-- HTTP response status and content verification
-- Positive and negative test scenarios
-- Automated test execution
-- Test reporting and execution traceability
-
-## CI/CD workflow
-
-The private source repository runs the automated tests through GitHub Actions.
-
-The workflow:
-1. Checks out the source code.
-2. Configures Java and Maven.
-3. Executes automated tests.
-4. Generates an Allure HTML report.
-5. Publishes the report to Cloudflare Pages.
-
-The CI runner is GitHub-hosted (`ubuntu-latest`).
-
-## Latest test report
-
-**Public Allure report:**
-
-https://api-testing-portfolio.pages.dev/report/
-
-**Portfolio website:**
-
-https://api-testing-portfolio.pages.dev/
-
-## Source code and project ownership
-
-The implementation is maintained in a separate private GitHub repository.
-
-This public repository is a presentation and documentation space. It does not redistribute source code belonging to third parties or disclose private project implementation details.
-
-The project is independently maintained by its author.
+An independent Java project demonstrating API test automation, test design, reporting and continuous integration.
 
 **Author:** Helena Le Goff  
-**GitHub:** https://github.com/helenaLGF
+**GitHub:** https://github.com/helenaLGF  
+**Live portfolio:** https://api-testing-portfolio.pages.dev/
 
 ---
 
-*Personal QA Automation project.*
+## Project overview
+
+This project demonstrates the implementation of automated REST API client tests using Java.
+
+It covers the testing lifecycle, from test design and HTTP request validation to automated execution and reporting.
+
+The project is independently developed and does not contain source code from any employer or client.
+
+## Technology stack
+
+| Technology | Purpose |
+|---|---|
+| Java 25 | Programming language |
+| Maven | Build and dependency management |
+| JUnit 6 | Automated test framework |
+| Spring RestClient | HTTP client |
+| MockRestServiceServer | HTTP request/response simulation |
+| AssertJ | Readable assertions |
+| JSONPath | JSON response validation |
+| Allure | Test reporting |
+| GitHub Actions | Continuous integration |
+| Cloudflare Pages | Public report hosting |
+
+## Test coverage
+
+The current automated suite contains three main scenarios:
+
+| HTTP method | Scenario | Expected result |
+|---|---|---|
+| GET | Retrieve an existing post | 200 OK |
+| POST | Create a post | Successful creation response |
+| DELETE | Delete a post | 204 No Content |
+
+See [Test Scenarios](docs/TEST_SCENARIOS.md) for details.
+
+## Technical documentation
+
+- [Test Strategy](docs/TEST_STRATEGY.md)
+- [Test Scenarios](docs/TEST_SCENARIOS.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [CI/CD Pipeline](docs/CI_CD.md)
+- [Project Scope and Limitations](docs/PROJECT_SCOPE.md)
+
+## Continuous integration
+
+The project uses GitHub Actions to automate test execution.
+
+The workflow:
+1. Checks out the source repository.
+2. Configures Java 25.
+3. Runs Maven tests.
+4. Generates an Allure HTML report.
+5. Publishes the report to Cloudflare Pages.
+
+The CI execution uses a GitHub-hosted ubuntu-latest runner.
+
+## Live results
+
+**Portfolio website:**  
+https://api-testing-portfolio.pages.dev/
+
+**Latest Allure report:**  
+https://api-testing-portfolio.pages.dev/report/
+
+## Source code and transparency
+
+The implementation is maintained in a separate private GitHub repository.
+
+This public repository provides project documentation and technical explanations. It does not redistribute private source code.
+
+The CI runner is provided by GitHub. Cloudflare Pages hosts the publicly accessible portfolio and test report.
+
+## About this project
+
+This project is part of my ongoing professional development in QA Automation, API testing and CI/CD.
+
+It demonstrates my approach to test design, automation, maintainability and test result reporting.
+
+---
+
+*Independent personal project — QA Automation.*

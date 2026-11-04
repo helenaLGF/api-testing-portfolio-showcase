@@ -2,60 +2,58 @@
 
 ## Overview
 
-The project currently implements three automated REST API test scenarios using Java and JUnit.
+The current automated test suite validates three REST API operations using Java and JUnit.
 
-The tests focus on HTTP request handling, response validation and JSON processing.
+HTTP responses are simulated to ensure deterministic and isolated tests.
 
-## Scenario 1 — Retrieve a post (GET)
+## Scenario 1 — Retrieve a post
 
-**Objective:** Verify that the API client can retrieve an existing post.
+**HTTP method:** GET  
+**Endpoint:** `/posts/1`
 
-- HTTP method: GET
-- Endpoint: `/posts/1`
-- Expected status: `200 OK`
-- Expected behavior:
-  - The response is successfully received.
-  - The JSON response is deserialized.
-  - The returned post contains the expected data.
+**Objective:** Verify that the client can retrieve an existing post.
 
-## Scenario 2 — Create a post (POST)
+**Checks:**
+- The GET request is sent to the expected endpoint.
+- The HTTP response status is validated.
+- The response body is processed.
+- The returned JSON data is checked.
 
-**Objective:** Verify that the API client can submit a new post.
+**Expected HTTP status:** 200 OK
 
-- HTTP method: POST
-- Endpoint: `/posts`
-- Request body: JSON
-- Expected status: `201 Created`
-- Expected behavior:
-  - The request contains the expected JSON payload.
-  - The server accepts the creation request.
-  - The response is correctly processed.
+## Scenario 2 — Create a post
 
-## Scenario 3 — Delete a post (DELETE)
+**HTTP method:** POST  
+**Endpoint:** `/posts`
 
-**Objective:** Verify that the API client can delete a post.
+**Objective:** Verify that the client can submit a new post.
 
-- HTTP method: DELETE
-- Endpoint: `/posts/1`
-- Expected status: `204 No Content`
-- Expected behavior:
-  - The DELETE request is correctly sent.
-  - The response status is validated.
-  - The empty response is handled correctly.
+**Checks:**
+- The POST request is sent to the expected endpoint.
+- The JSON request payload is validated.
+- The response is successfully processed.
+- The returned data is checked.
 
-## Test implementation
+The test validates the configured successful creation response.
 
-The tests use:
+## Scenario 3 — Delete a post
 
-- JUnit Jupiter
-- Spring RestClient
-- MockRestServiceServer
-- AssertJ
+**HTTP method:** DELETE  
+**Endpoint:** `/posts/1`
 
-Mock HTTP responses allow the client behavior to be tested in an isolated and repeatable environment.
+**Objective:** Verify that the client can request deletion of a post.
 
-## Current scope
+**Checks:**
+- The DELETE request is sent to the expected endpoint.
+- The HTTP response status is validated.
+- The response is handled without expecting a response body.
 
-These scenarios validate the API client's HTTP behavior.
+**Expected HTTP status:** 204 No Content
 
-They do not claim to constitute a complete security test suite or a live end-to-end test against a production API.
+## Execution
+
+The scenarios are automated with JUnit.
+
+HTTP interactions are simulated using Spring MockRestServiceServer.
+
+This ensures that the tests can run without relying on a live external API.
