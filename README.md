@@ -108,3 +108,8 @@ The following diagram illustrates the API testing workflow:
 
 See [the architecture documentation](docs/ARCHITECTURE.md) for details.
 
+
+## Architecture diagram
+
+See the [API testing architecture diagram](docs/architecture.mmd).
+
