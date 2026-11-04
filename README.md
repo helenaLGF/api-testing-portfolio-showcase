@@ -99,20 +99,13 @@ It demonstrates my approach to test design, automation, maintainability and test
 - **Public showcase repository:** https://github.com/helenaLGF/api-testing-portfolio-showcase
 - **Author's GitHub profile:** https://github.com/helenaLGF
 
-
 ## Architecture diagram
 
-The following diagram illustrates the API testing workflow:
+The following diagram illustrates the API testing workflow.
 
-![API Testing Architecture](docs/architecture.mmd)
+See the [API testing architecture diagram](docs/architecture.mmd) for a visual overview.
 
-See [the architecture documentation](docs/ARCHITECTURE.md) for details.
-
-
-## Architecture diagram
-
-See the [API testing architecture diagram](docs/architecture.mmd).
-
+For more details, see the [architecture documentation](docs/ARCHITECTURE.md).
 
 ## Screenshots
 
@@ -127,4 +120,3 @@ See the [API testing architecture diagram](docs/architecture.mmd).
 ### GitHub Actions CI pipeline
 
 ![GitHub Actions workflow](docs/screenshots/github-actions.png)
-
